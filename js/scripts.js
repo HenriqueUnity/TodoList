@@ -67,3 +67,13 @@ function addDailyTasks() {
   taskList.push({ task: "revisar projetos de estudo", done: false });
   showTask();
 }
+
+function deleteDone() {
+  for (let i = taskList.length - 1; i >= 0; i--) {
+    if (taskList[i].done) {
+      taskList.splice(i, 1);
+    }
+    console.log(i);
+  }
+  showTask();
+}
