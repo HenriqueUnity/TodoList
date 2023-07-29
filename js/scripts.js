@@ -15,6 +15,7 @@ function setInputValue() {
   }
   showTask();
   input.value = "";
+  input.focus();
 }
 
 function taskDone(index) {
@@ -59,3 +60,10 @@ function loadTasks() {
 loadTasks();
 
 button.addEventListener("click", setInputValue);
+
+function addDailyTasks() {
+  taskList.push({ task: "Dar entrada aqui na todo list", done: true });
+  taskList.push({ task: "estudar programação", done: false });
+  taskList.push({ task: "revisar projetos de estudo", done: false });
+  showTask();
+}

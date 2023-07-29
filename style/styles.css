@@ -5,7 +5,10 @@
   font-family: "Raleway", sans-serif;
 }
 body {
-  background: url("/img/background.png");
+  background-image: url("/img/pexels-guillaume-meurice-1591447.jpg");
+  /* background: url("/img/pexels-guillaume-meurice-1591447.jpg");
+} */
+  background-size: cover;
 }
 img {
   height: 25px;
@@ -28,13 +31,14 @@ img {
 .button-task {
   border: none;
   border-radius: 5px;
-  height: 30px;
+  height: 40px;
   width: 100px;
   background-color: aquamarine;
   color: rebeccapurple;
-  font-size: 15px;
+  font-size: 18px;
   padding: 0 12px;
   cursor: pointer;
+  margin-left: 10px;
 }
 .button-task:hover {
   opacity: 0.8;
@@ -75,10 +79,20 @@ img {
   text-decoration: dashed;
 }
 h2 {
-  color: blueviolet;
+  color: rgb(65, 8, 27);
   margin: 100px auto 0;
   width: 500px;
   display: flex;
   justify-content: center;
   font-size: 40px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.daily-task {
+  height: 40px;
+  width: 120px;
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: #f2f2f2;
+  margin-top: 10px;
 }
